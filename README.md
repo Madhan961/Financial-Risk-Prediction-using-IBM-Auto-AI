@@ -52,4 +52,18 @@ A project is how you organize your resources to achieve a particular goal.
 To Know more about the Watson studio project please click [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/projects.html?audience=wdp&context=wdp)  
 
 • Launch the Watson Studio dashboard
-![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/WSdashboard.png)
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/WSdashboard.png)  
+• Create a new project by clicking on Get Started and New Project, or Create Project
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/projects.png.png)
+##### Give your Project a name.  
+• Select an Object Storage from the drop-down menu or create a new one for free. This is used to store the notebooks and data. Do not forget to click refresh when returning to   the Project page.  
+• click Create.  
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/createproject.png)    
+##### Once you are in the Project Dashboard, click on "Add to Project" on the top right and select AutoAI Experiment
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/addtoproject.png)  
+##### Associate a Machine Learning service
+• Give your Auto AI experiment a unique name    
+• Associate a Watson Machine Learning service, if you have already created one this will apear in the dropdown or you can create a new one.  
+• Once this is done, click the "Reload" button for your Machine Learning service to appear  
+
+
