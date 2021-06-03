@@ -6,7 +6,7 @@ In this workshop you will learnyou will learn how to
     ⇾ Deploy the ML model as a webserver  
     ⇾ Integrating Model and Node-RED Service  
     ⇾ Build an Application using Node-RED which takes inputs from the user and showcases the prediction on UI  
-## Prerequisites  
+# Prerequisites  
 To complete this project you must have an IBM account   
 • Please click [here](https://cloud.ibm.com/login) to register for IBM   
 • Please click [here](https://cloud.ibm.com/login) to log in to IBM Account  
