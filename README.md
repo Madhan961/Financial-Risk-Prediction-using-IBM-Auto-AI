@@ -49,4 +49,6 @@ In this Activity, We gonna build a machine learning model that predicts  fraudul
 ### Create Watson Studio Project
 A project is how you organize your resources to achieve a particular goal.  
 
-To Know more about the Watson studio project please click [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/projects.html?audience=wdp&context=wdp) 
+To Know more about the Watson studio project please click [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/projects.html?audience=wdp&context=wdp)  
+
+• Launch the Watson Studio dashbo
