@@ -1,6 +1,6 @@
 # Financial-Risk-Prediction-using-IBM-Auto-AI
 In this workshop you will learnyou will learn how to
-⇾ Work with Watson Studio
+Work with Watson Studio
 ⇾ Create a project in Watson Studio
 ⇾ Use Auto Ai experiment to create a model
 ⇾ Deploy the ML model as a webserver
