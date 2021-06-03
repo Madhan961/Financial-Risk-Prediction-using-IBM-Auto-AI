@@ -51,4 +51,5 @@ A project is how you organize your resources to achieve a particular goal.
 
 To Know more about the Watson studio project please click [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/projects.html?audience=wdp&context=wdp)  
 
-• Launch the Watson Studio dashbo
+• Launch the Watson Studio dashboard
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/WSdashboard.png)
