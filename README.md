@@ -1,5 +1,5 @@
 # Financial-Risk-Prediction-using-IBM-Auto-AI
-In this workshop you will learnyou will learn how to
+In this workshop you will learnyou will learn how to \n
     ⇾ Work with Watson Studio
     ⇾ Create a project in Watson Studio
     ⇾ Use Auto Ai experiment to create a model
