@@ -10,3 +10,10 @@ In this workshop you will learnyou will learn how to
 To complete this project you must have an IBM account   
 • Please click [here](https://cloud.ibm.com/login) to register for IBM   
 • Please click [here](https://cloud.ibm.com/login) to log in to IBM Account  
+### Create IBM Services
+In this activity, you will be creating the Necessary IBM services. The following are the services that you have to create.  
+ ⇾ Watson studio  
+ ⇾ Node-RED  
+ ⇾ Cloud Object Storage service (COS)  
+ ⇾ Machine Learning service (ML)  
+COS and ML services will e created while creating a Watson Studio Project  
