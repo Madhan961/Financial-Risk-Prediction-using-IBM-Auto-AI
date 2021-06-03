@@ -65,5 +65,7 @@ To Know more about the Watson studio project please click [here](https://datapla
 • Give your Auto AI experiment a unique name    
 • Associate a Watson Machine Learning service, if you have already created one this will apear in the dropdown or you can create a new one.  
 • Once this is done, click the "Reload" button for your Machine Learning service to appear  
-
+• Your machine learning service will appear under "Associated services"
+• Click Create
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/MLservice.png)
 
