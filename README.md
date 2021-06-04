@@ -113,4 +113,78 @@ To Know more about the Watson studio project please click [here](https://datapla
 Once your model is successuly deployed, you can access the API reference to make API calls or Test your model by providing input using a form or in a JSON format.  
 
 
+###### For Reference   
 
+I'm providing some youtube videos for reference as well as you can clear all doubts with these videos.  
+
+• Create a project  
+        to watch video click [here](https://www.youtube.com/watch?v=Tr82IMw7BZw)  
+• Create the AUTO AI Experiment  
+        to watch video click [here](https://www.youtube.com/watch?v=QhLNCXj5PY4)  
+• Run Auto Ai Experiment 
+         to watch video click [here](https://www.youtube.com/watch?v=0nKGHGJcvls)  
+• Save The Model  
+         to watch video click [here](https://www.youtube.com/watch?v=xkH7fWIteV0)  
+• Deploy The Model 
+         to watch video click [here](https://www.youtube.com/watch?v=mqeH8-zl24I)  
+
+## Build Node-RED Application  
+
+Let's build a User interface which takes inputs from the user. The Model Analyses the Inputs and returns the Prediction that is showcased on the User interface.  
+
+### Integrate Node-RED With Auto Ai Model  
+In this task, you will be creating a Node-RED flow that integrated with the model built.  
+
+Note: Create a form node which has the Input values according to the dataset that you have taken.  
+
+## IBM Cloud API key
+• Generate an IBM Cloud apikey by clicking the Manage --> Access (IAM) option on your top right.
+ 
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/accessapi.png)  
+
+• Click on API keys from the left navigation pane, and select Create an IBM Cloud API key  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/apikeys.png)  
+
+• Once your key is created Copy or Download your key.  
+
+### Node-RED
+
+• Go to IBM Dashboard and click on the Cloud Foundry apps.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/dashboard.png)  
+
+• Select the created Node.RED app  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/selectnodered.png)  
+
+• Click on the  Visit App URL
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/appurl.png)  
+
+• You will be redirected a new page then click on the "go to your Node-RED flow editor.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/NRfloweditor.png)
+
+• Create a new flow.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/NRfloweditor.png)  
+
+• Search for form node in filter nodes block and drag that form node into flow.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/dragform.png)
+
+• Double click on the form node and add new ui_group then enter the required fields as shown in image.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/enterfields.png)  
+
+
+
+
+
+
+
+
+
+
+ 
