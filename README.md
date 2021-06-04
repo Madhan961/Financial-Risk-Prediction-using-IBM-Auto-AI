@@ -86,7 +86,7 @@ To Know more about the Watson studio project please click [here](https://datapla
 
 ### We will now work through the different aspects of configuring our AutoAI experiment and discuss the Classification Models that are created.
 
-### Deploying you Model
+### Deploying your Model
 • Once you select your final model pipeline. You can choose to Save it as a notebook or an ML model.
 • Choose your option and Click Save.
 
