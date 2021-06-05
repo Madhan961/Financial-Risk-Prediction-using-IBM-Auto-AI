@@ -325,7 +325,7 @@ Note: Create a form node which has the Input values according to the dataset tha
 
 ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/UIpage.png)
 
-• It will predict the fraud prediction.  
+• It will predict the fraud risk.  
 
 ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/output.png)  
 
