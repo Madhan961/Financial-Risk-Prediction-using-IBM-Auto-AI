@@ -297,8 +297,25 @@ Note: Create a form node which has the Input values according to the dataset tha
 
 ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/finalfunction.png)  
 
+• Click on deploy, we will get a alert to confirm deploy then click on the "confirm deploy" after that we will notified as "successfully deployed".  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/confirmdeploy.png)
+
+•  On the top right corner, click on the dashboard then next click on this  icon which is    top right corner in dashboard.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/linkdashboard.png)  
+
+• It will be redirected to new page which is UI then enter the values and click on submit.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/uilinkpage.png)
+
+• Go back to the Node-RED flow page then click on the debug on top right corner, in that debug the prediction output will be displayed.  
+• Copy the output path.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/copypath.png)  
+
 • Double click on the function node and write the given code then click done.  
-   msg.payload = msg.payload.predictions[0].values[0][1][1]  
+   msg.payload = msg.(paste the copied path here)
    return msg;  
 
 ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/finalfunctioncode.png)  
