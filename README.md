@@ -317,7 +317,18 @@ Note: Create a form node which has the Input values according to the dataset tha
 
 ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/successdeploy.png)  
 
-• On the top right corner, click on the dashboard then next click on this ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/arrow1.png) icon which is top right corner in dashboard
+• On the top right corner, click on the dashboard then next click on this ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/arrow2.png) icon which is top right corner in dashboard.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/NRdashboard.png)  
+
+• It will be redirected to new page which is UI then enter the values and click on submit.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/UIpage.png)
+
+• It will predict the fraud prediction.
+
+
+
 
 
 
