@@ -178,6 +178,144 @@ Note: Create a form node which has the Input values according to the dataset tha
 
 ![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/enterfields.png)  
 
+• Now drag dropdown node into flow for required number of times and enter the labels and options with gender, marital status, education, employment type, credit history, housing, locality as shown in images then click done.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/dragdropdown.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/gender.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/maritalstatus.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/education.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/employmenttype.png)    
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/credithistory.png)    
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/housing.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/locality.png) 
+
+• Drag the debug nodes into flow for all nodes and connect each node with debug node individually.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/debug.png)  
+
+• Set the gobal variables to the UI. So, drag the function node into flow for required number of times to link with each form and dropdown nodes as shown in image.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/dragfunction.png)  
+
+• Give a name for each function node and write a function code for each and every function.
+
+   1. Function code for form node then click done.  
+       • copy the downloaded apikey and paste it in "var apikey"
+        I'm providing my code for reference
+         global.set("Dependents",msg.payload.a)
+         global.set("ApplicantIncome",msg.payload.b)
+         global.set("CoapplicantIncome",msg.payload.c)
+         global.set("LoanAmount",msg.payload.d)
+         global.set("Loan_Term",msg.payload.e)
+         var apikey ="Mm7nIe5NsYWH5gqo3zM9TFt_sNtMkE9FCeUJ90oNWJHp"
+         msg.headers={"content-type":"application/x-www-form-urlencoded"}
+         msg.payload={"grant_type":"urn:ibm:params:oauth:grant-type:apikey","apikey":apikey} 
+         return msg;
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/formcode.png)  
+    
+   2. Function code for gender dropdown node then click done.   
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/gendercode.png)  
+    
+   3. Function code for marital status dropdown node then click done.  
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/maritalcode.png)
+    
+   4. Function code for education dropdown node then click done.   
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/educationcode.png)
+    
+   5.  Function code for employment type dropdown node then click done.  
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/employecode.png)
+    
+   6. Function code for credit history dropdown node then click done.  
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/creditcode.png)  
+    
+   7. Function code for housing dropdown node then click done.  
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/housingcode.png)
+    
+   8. Function code for locality dropdown node then click done.  
+    
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/localitycode.png)
+    
+• Get the access token with the help of HTTP request.  
+• Drag the http request node into flow and link with the global variables for form node (function node).  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/httprequest.png)
+
+• Double click on the http request node then select "POST" in method block  and copy and paste this "https://iam.cloud.ibm.com/identity/token" in URL block after that select   "a parsed JSON object" in return block then click done.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/httpreqcode.png)  
+
+• Drag the debug node  and function node into flow and link it with http request node as shown in image.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/httpfunction.png)
+
+• Double click on the recent function node and enter the code then click done.  
+   var sex = global.get("sex")  
+   var maritalstatus = global.get("maritalstatus")  
+   var dependents = global.get("dependents")  
+   var education = global.get("education")  
+   var employmenttype = global.get("employmenttype")  
+   var applicantincome = global.get("applicantincome")  
+   var coapplicantincome = global.get("coapplicantincome")  
+   var loanamount = global.get("loanamount")  
+   var loanterm = global.get("loanterm")  
+   var credit_history_availablity = global.get("credit_history_availablity")  
+   var housing = global.get("housing")  
+   var locality = global.get("locality")  
+   var token=msg.payload.access_token  
+   msg.headers={'Content-Type':'application/json',"Authorization":"Bearer"+token,"Accept":"application/json"}  
+   msg.payload={"input_data":[{"fields": [["sex", "maritalstatus", "dependents", "education", "employmenttype", "applicantincome", "coapplicantincome", "loanamount",    "loanterm", "credit_history_availablity", "housing", "locality"]],"values": [[sex, maritalstatus, dependents, education, employmenttype, applicantincome, coapplicantincome, loanamount, loanterm, credit_history_availablity, housing, locality]]}]}  
+   return msg;  
+   
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/httpfuntioncode.png)  
+
+• Drag the http request and link it with the function code.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/finalhttprequest.png)  
+
+• Double click on the http request node then select "POST" in method block  and copy and paste the api reference link in URL block after that select "a parsed JSON object" in   return block then click done. 
+  Note: check whether the link has question mark(?) and version at end of the link.
+  
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/apilink.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/finalhttpreqcode.png)
+
+• Drag the debug node and function node into flow  and link with http request node.  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/finalfunction.png)  
+
+• Double click on the function node and write the given code then click done.  
+   msg.payload = msg.payload.predictions[0].values[0][1][1]  
+   return msg;  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/finalfunctioncode.png)  
+
+• Drag the debug node and text node into flow and link with function node. 
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/textnode.png)  
+
+• Double click on the text node and give the label name as "chances of fraud" then click done.
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/textnodecode.png)  
+
+• Click on deploy, we will get a alert to confirm deploy then click on the "confirm deploy" after that we will notified as "successfully deployed".
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/confirmdeploy.png)  
+
+![](https://github.com/Madhan961/Financial-Risk-Prediction-using-IBM-Auto-AI/blob/main/Images/successdeploy.png)  
 
 
 
